@@ -1,0 +1,40 @@
+<div class="Container">
+  <form #myForm="ngForm">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Full Name</label>
+      <input type="email" class="form-control" name="name" aria-describedby="emailHelp" ngModule>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Mobile Number</label>
+      <input type="email" class="form-control" name="mobile" aria-describedby="emailHelp" ngModule>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" name="email" aria-describedby="emailHelp" ngModule>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="password" ngModule>
+    </div>
+    
+    <button type="button" class="btn btn-primary" (click)="addUser(myForm.value)">Submit</button>
+  </form>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Full Name</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email address</th>
+        <th scope="col">Password</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
+</div>
